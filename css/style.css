@@ -9,6 +9,11 @@ body {
     color: #252525;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+/* Importante**/
 .menu{
     background-color: #252525;
     width: 100%;
@@ -249,55 +254,93 @@ margin: 60px 0;
     text-align: center; 
 
 }
-.up-box{
-    width: 960px;
+.assine{
     background-color: #e4e1d2;
-    height: 50px;
-    padding: 30px;
-   
-
-}
-.up-box .up-box-container {
-    margin: 0 30px;
-height: 100px;
-
-
+    padding: 30px 0;
+} 
+.assine-container {
+    width: 960px;
+    margin: 0 auto;
 }
 
-.up-box-container .box-text {
+.assine-container::after , .assine-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+.assine-text {
 float: left;
-width: 50%;
+width: 460px;
+margin: 0 10px;
 }
-.up-box-container .box-text h2 {
+.assine-text h2 {
     font-size: 2.25em;
     }
 
-    .up-box-container .box-text p {
+.assine-text p {
         font-size: 1.5em;
         font-style: italic;
-        }
-  
-
-.up-box-container .box-email {
+}
+.assine-container .assine-email {
 float: left;
-width: 50%;
+width: 460px;
+margin: 0 10px;
 }
-.up-box-container .box-email input {
-    width: 200px;
-    border: none;
+.assine form label {
+    display: none;
+}
+.assine-container .assine-email input {
+  
+    width: 320px;
+    border: 3px solid #252525;
+    background: none;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    float: left;
 }
 
-.up-box-container .box-email input::placeholder{
-  background-color: #e4e1d2;
-}
-.up-box-container .box-email button {
-    height: 40px;
-    padding: 5px;
+.assine-container .assine-email button {
+    background: #252525;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    color: white;
-    background-color: #202121;
-    border: none;
-    font-family: Georgia, serif;
     font-size: 1.5em;
     width: 140px;
+    padding: 13px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: left;
+    
+}
+
+.footer {
+    background-color: #d6d3c8;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.footer-container::after , .footer-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer-container .footer-text {
+    max-width: 46%;
+    float: left;
+    margin: 0 10px;
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+
+.footer-container .img-footer {
+    float: right;
+    margin: 0 10px;
+    padding: 10px 0;
 }
